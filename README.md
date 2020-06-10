@@ -7,14 +7,14 @@ for each loan including borrower interest rate, credit score, homeownership stat
 and risk score. The dataset can be found [here](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv&sa=D&ust=1554486256021000),
 and a data dictionary to explain loan variables [here](https://www.google.com/url?q=https://docs.google.com/spreadsheet/ccc?key%3D0AllIqIyvWZdadDd5NTlqZ1pBMHlsUjdrOTZHaVBuSlE%26usp%3Dsharing&sa=D&ust=1554486256024000).
 
-#Summary of Findings
+## Summary of Findings
 In the exploration I found that there was a strong relationship between a borrower's 
 credit score and their loan interest rate. There is a negative correlation between them,
 because as credit scores increase, loan interest rates decrease, and vice versa. I expected
 borrowers that utilized a high percentage of their avaialble credit to have higher credit scores,
 though analysis between those two variables only showed a slight positive correlation. Other 
-variables that did have an effect on borrower interest rates and credit scores were Prosper Scores
-, which is the risk score prosper assigns to a borrower, and homeownership status. Riskier borrowers
+variables that did have an effect on borrower interest rates and credit scores were Prosper Scores,
+which is the risk score prosper assigns to a borrower, and homeownership status. Riskier borrowers
 had higher interest rates and credit scores, and homeowners had lower interest rates and credit scores.
 
 Other variables I reviewed included the state the borrower lived in, borrower employment status, and loan
@@ -25,4 +25,11 @@ A majority of the loans in the dataset were for Debt Consolidation, and it was i
 loans were taken out by people with both good and bad credit, which made it clear that debt consolidation
 isn't mainly done by people in financial distress.
 
- 
+## Key Insights for Presentation
+For the presentation I focus on the influence of loan interest rates, credit score and Prosper risk score. I
+start by introducing the interest rate, credit score, and Prosper risk score variables, followed by the interaction between interest rate vs teh other two variables. The interaction between interest rates and credit scores shows that there is a negative correlation between interest, 
+where as credit score increases, loan interest rates decrease, and vice versa. There is also a negative correlation between interest rates and Prospect risk scores, where lower scores(meaning higher risk) are associated with higher interest rates, and higher scores (meaning lower risk) are associated with lower interest rates.
+
+Finally I plot the Prosper risk score variable's effect on both of the other variables through a faceted
+heat map.  This confirmed that lower credit scores result in higher risk, which then results in higher 
+interest rates, and vice versa.
